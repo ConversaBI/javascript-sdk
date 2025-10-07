@@ -1,0 +1,81 @@
+.error-display {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 16px;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 6px;
+  color: #dc2626;
+}
+
+.error-display__icon {
+  font-size: 20px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.error-display__content {
+  flex: 1;
+}
+
+.error-display__title {
+  margin: 0 0 4px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #dc2626;
+}
+
+.error-display__message {
+  margin: 0 0 12px 0;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #991b1b;
+}
+
+.error-display__retry-button {
+  padding: 6px 12px;
+  border: 1px solid #dc2626;
+  border-radius: 4px;
+  background: #dc2626;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.error-display__retry-button:hover {
+  background: #b91c1c;
+  border-color: #b91c1c;
+}
+
+.error-display__retry-button:active {
+  transform: translateY(1px);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .error-display {
+    padding: 10px 12px;
+    gap: 10px;
+  }
+  
+  .error-display__icon {
+    font-size: 18px;
+  }
+  
+  .error-display__title {
+    font-size: 13px;
+  }
+  
+  .error-display__message {
+    font-size: 12px;
+  }
+  
+  .error-display__retry-button {
+    padding: 5px 10px;
+    font-size: 11px;
+  }
+}
+
